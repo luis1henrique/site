@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
+       <div class="container">
             <img src="img/logo.png" id="log">
-                <div id="divBusca">
-                    <input type="text" id="txtBusca" placeholder=""/>
-                    <img src="img/lupinha.jpg" id="btnBusca" alt="Buscar"/>
-                </div>
-                <div class="containerimg">
-                    <img src="img/balão.png" >
-                    <img src="img/caminhão.png" >
-                    <img src="img/icone.png" >
-                    <img src="img/carrinho.png" >
-                </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="o que desejar buscar?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">buscar</button>
+            </form>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link " href="#"><img src="img/caminhão.png" class="lista"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="img/carrinho.png" class="lista"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="img/icone.png" class="lista"></a>
+                </li>
+                
+              </ul>
         </div>
     </header>
 </body>
