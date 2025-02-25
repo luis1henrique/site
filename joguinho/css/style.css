@@ -24,4 +24,11 @@ form{
     padding-right: 100px;
     width: 600px;
 }
+/* Forçar a imagem a ter o mesmo tamanho, mantendo a proporção */
+.carousel-item img {
+    width: 50%;  /* Garantir que a imagem ocupe toda a largura do contêiner */
+    height: 550px;  /* Definir uma altura fixa para todas as imagens */
+    object-fit: contain; /* Ajusta a imagem para cobrir a área do contêiner sem distorção */
+}
 
+  
