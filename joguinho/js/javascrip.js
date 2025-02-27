@@ -1,5 +1,22 @@
-document.getElementById("btnBusca").addEventListener("click", function() {
-    var query = document.getElementById("txtBusca").value;  // Captura o valor digitado no campo de busca
-    console.log("Searching for:", query);  // Exibe no console o valor da busca
-    // Add your search functionality here  // Aqui você pode adicionar a funcionalidade de busca real
-});
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+}
